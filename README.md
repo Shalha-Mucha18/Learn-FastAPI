@@ -1,4 +1,4 @@
-# 🚀 FastAPI Blog API with JWT Authentication
+# 🚀 Blog Application using FastAPI
 
 A production-ready blog API featuring user authentication, role-based access control, and CRUD operations for blog posts.
 
@@ -16,11 +16,11 @@ A production-ready blog API featuring user authentication, role-based access con
 - JWT token-based authentication
 - Password hashing with BCrypt
 - Protected routes with dependency injection
-- Token expiration (30 minutes by default)
+- Token expiration 
 
 ### Blog Management
 - Full CRUD operations for blog posts
-- User-blog relationship (each post tied to author)
+- User-blog relationship (each post tied to an author)
 - Data validation with Pydantic models
 - Comprehensive error handling
 
@@ -39,6 +39,6 @@ A production-ready blog API featuring user authentication, role-based access con
    ```bash
    pip install -r requirements.txt
 3. Running the Application
-  ```bash
-  uvicorn main:app --reload
+   ```bash
+   uvicorn main:app --reload
  
