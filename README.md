@@ -41,4 +41,15 @@ A production-ready blog API featuring user authentication, role-based access con
 3. Running the Application
    ```bash
    uvicorn main:app --reload
+## 🔐 Authentication Flow
+1. Get access token:
+```bash
+ curl -X POST "http://127.0.0.1:8000/login" \
+-H "Content-Type: application/x-www-form-urlencoded" \
+-d "username=user@example.com&password=yourpassword"
+```
+2. Use the token in requests:
+```bash
+curl -X GET "http://127.0.0.1:8000/blog" \
+-H "Authorization: Bearer YOUR_TOKEN"
  
