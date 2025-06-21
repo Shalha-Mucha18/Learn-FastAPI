@@ -1,12 +1,34 @@
-# FastAPI Blog Application
+# 🚀 FastAPI Blog API with JWT Authentication
 
-## Features
-- ✔️ User registration and authentication (JWT tokens)
-- ✔️ CRUD operations for blog posts
-- ✔️ Password hashing with bcrypt
-- ✔️ SQLite database with SQLAlchemy ORM
-- ✔️ Pydantic schemas for data validation
-- ✔️ RESTful API endpoints
+A production-ready blog API featuring user authentication, role-based access control, and CRUD operations for blog posts.
+
+## 🔧 Built With
+
+- **FastAPI** - Python web framework for building APIs
+- **SQLAlchemy** - ORM for database operations
+- **SQLite** - Lightweight database (can be easily switched to PostgreSQL/MySQL)
+- **JWT** - Secure token-based authentication
+- **BCrypt** - Password hashing for security
+
+## ✨ Features
+
+### Authentication & Authorization
+- JWT token-based authentication
+- Password hashing with BCrypt
+- Protected routes with dependency injection
+- Token expiration (30 minutes by default)
+
+### Blog Management
+- Full CRUD operations for blog posts
+- User-blog relationship (each post tied to author)
+- Data validation with Pydantic models
+- Comprehensive error handling
+
+### API Features
+- Auto-generated interactive documentation
+- Clean RESTful endpoint design
+- SQLite for development (easy production DB switch)
+- Well-structured project architecture
 
 ## Installation
 
@@ -17,6 +39,6 @@
    ```bash
    pip install -r requirements.txt
 3. Running the Application
-```bash
+  ```bash
   uvicorn main:app --reload
  
